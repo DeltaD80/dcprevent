@@ -1,39 +1,41 @@
-DCPrevent prevents illegitimate mouse click.
+DCPrevent (Universal) prevents illegitimate mouse clicks.
 
-**Each DLL must be paired with the corresponding Minecraft version. IT WILL NOT WORK FOR OTHER VERSIONS.**
+This build auto-detects the Minecraft Bedrock version at runtime. It is confirmed on
+1.26.13, 1,26,20, 1.26.21, 1.26.31 and 1.26.32, and will attempt to self-resolve on other
+versions automatically.
 
-Updates will be made for each major Minecraft version. This may or may not work when using with a client. To be safe, and for official tournaments, avoid using clients along with DCPrevent. If you have any questions or want to see the source code (must explain why), message me on Discord @deltameltage or join the urban and ping me.
+IMPORTANT - ALWAYS CHECK THE CONSOLE/LOG ON A NEW VERSION:
+When you run it, the console (and dcprevent.log) prints one of:
+  [DCPrevent] handler resolved via pin 1.26.xx   <- known version, exact
+  [DCPrevent] handler resolved via scan (consensus N/M)  <- new version, self-resolved
+  [DCPrevent] could not resolve handler ... unsupported or changed MC version
+If you see "could not resolve", DCPrevent is NOT active on that version. Do not assume you are protected unless you
+see a "resolved via pin" or "resolved via scan" line AND your click data appears.
 
-**TO USE:**
-
+TO USE:
 1. Extract the zip file.
 2. Open Minecraft.
-3. Run the DCPrevent-v1.exe file.
+3. Run the DCPrevent-v2.exe file.
 
-Closing the .exe/cmd prompt window or closing Minecraft turns off DCPrevent. You must run the exe again in order to turn it back on.
+Closing the .exe/cmd prompt window or closing Minecraft turns off DCPrevent. You must
+run the exe again in order to turn it back on.
 
-**LOGGING:**
-
+LOGGING:
 You can see your live click data in the cmd prompt window.
-Pressing ";" saves your current click data to /logs. This is safe, and should be used often to backup your logs. 
-Closing the .exe or Minecraft window writes session click data to /logs. 
+Pressing ";" saves your current click data to /logs.
+Closing the .exe or Minecraft window writes session click data to /logs.
+dcprevent.log updates click data live and is never auto-deleted.
 
-dcprevent.log updates click data live. If your computer or game crashes, you can recover logs from this file. This file never deletes any logs - it just continues appending from each session.
-
-**IMPORTANT NOTES:**
-
+IMPORTANT NOTES:
 Do not rename the dll or exe.
 Do not move the dll or exe into different folders.
-Do not place other dlls into this folder. (This is allowed for now, but breaks the premise of DCPrevent)
+Do not place other dlls into this folder.
 Do not move or delete the logs folder.
-The exe can be reused for future versions of the DCPrevent dll, but will likely be updated in the future.
 
-These are the legitimate SHA-256 lines for official releases. (Will be updated in the future, official version can always be downloaded from my Discord profile).
+SHA-256 (official releases):
 
-**DCPrevent-26.13.dll:**
-444317dfe0a720b939b12e5ae504695fa9f0317a3bc504bc1405f96c61d871fb
+DCPrevent-Universal.dll:
+ab69662ccf9c878cfd492aede31ed7724840971ca1a85c19860e6a0fc1161c3f
 
-**DCPrevent-v1.exe:**
-9d657860219f9ab32a2aaefa4bf5564eaafe2a2a0323c74d14d59450c30624da
-
-
+DCPrevent-v2.exe:
+488715d397c5651b1cc7d119ba5241a402c2ec8d3f27ef034e871cd155a7a553
