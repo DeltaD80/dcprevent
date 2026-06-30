@@ -4,7 +4,7 @@ https://www.youtube.com/watch?v=EkW_Owym6q8
 DCPrevent (Universal) prevents illegitimate mouse clicks.
 
 This build auto-detects the Minecraft Bedrock version at runtime. It is confirmed on
-1.26.13, 1,26,20, 1.26.21, 1.26.31 and 1.26.32, and will attempt to self-resolve on other
+1.26.13, 1.26.20, 1.26.21, 1.26.31 and 1.26.32, and will attempt to self-resolve on other
 versions automatically.
 
 IMPORTANT - ALWAYS CHECK THE CONSOLE/LOG ON A NEW VERSION:
