@@ -1,3 +1,6 @@
+Setup/Antivirus Exception Guide:
+https://www.youtube.com/watch?v=EkW_Owym6q8
+
 DCPrevent (Universal) prevents illegitimate mouse clicks.
 
 This build auto-detects the Minecraft Bedrock version at runtime. It is confirmed on
